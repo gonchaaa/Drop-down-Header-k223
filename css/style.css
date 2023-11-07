@@ -1,0 +1,59 @@
+header {
+  background-color: blue;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+header .container .category {
+  padding: 20px;
+}
+header .container .category ul {
+  display: flex;
+}
+header .container .category ul li {
+  list-style: none;
+  margin-right: 10px;
+}
+header .container .category ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+header .container .category ul li a:hover {
+  color: yellow;
+}
+header .container .category ul li a:hover .drop-down {
+  opacity: 1;
+  visibility: visible;
+}
+header .container .category ul li .drop-down {
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.244);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.393);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: black;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease-in-out;
+}
+header .container .category ul li .drop-down .item {
+  font-weight: bold;
+  font-size: 20px;
+  width: 25%;
+  color: black;
+}
+header .container .category ul li .drop-down .item .second-drop {
+  font-weight: 400;
+  font-size: 18px;
+  display: flow-root;
+}/*# sourceMappingURL=style.css.map */
